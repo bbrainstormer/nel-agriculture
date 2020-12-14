@@ -5,6 +5,13 @@ G.AddData({
     engineVersion: 1,
     manifest: 0,
     func: function() {
+	    // Add a new item to the resources tab
+	    G.resCategories['agriculture'] = {
+            name:'Agriculture',
+            base:[],
+            side:[],
+            }
+	
         //Adds a new food item: grass.  Not very tasty or healthy, but better than spoiled food
         new G.Res({
             name: 'grass blades',
@@ -18,19 +25,19 @@ G.AddData({
                     'spoiled food': 0 //Decays into nothing
                     }
                 }, 
-                partOf: '', //People won't eat it
+                partOf: '', //People won't do anything to it
                 category: 'food', // but it'll show up in the menu
             });
 
         //Gather grass blades from, well, grass
         G.getDict('grass').res['gather']['grass blades'] = 8;
 
-        //Since grass blades are an awful food source, we need to be able to disable that
-        //We don't want it dragging health & happiness down
+        //Grass blades are an awful food source, but better than nothing
+        //So this way, we can enable/disable it
         new G.Policy({
 		    name:'eat grass',
 		    desc:'Your people will eat [grass blades].  An awful source of subsistence, but better than [spoiled food].',
-		    cost:{'influence':1},
+		    cost:{'influence':1}, //If II could I'd make it so that only turning it on uses influence
 		    req:{'rules of food':true},
 		    effects:[
 			    {type:'make part of',what:['grass blades'],parent:'food'},
