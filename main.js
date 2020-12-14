@@ -18,8 +18,8 @@ G.AddData({
                         'spoiled food': 0 //Decays into nothing
                         }
                 }, 
-                partOf: 'food',
-                category: '',
+                partOf: '',
+                category: 'food',
             });
 
         //Gather grass blades from, well, grass
