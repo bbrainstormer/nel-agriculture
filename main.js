@@ -31,7 +31,6 @@ G.AddData({
 		    name:'eat grass',
 		    desc:'Your people will eat [grass blades].  An awful source of subsistence, but better than [spoiled food].',
 		    cost:{'influence':1},
-		    startMode:'off',
 		    req:{'rules of food':true},
 		    effects:[
 			    {type:'make part of',what:['grass blades'],parent:'food'},
