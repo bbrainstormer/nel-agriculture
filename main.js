@@ -6,7 +6,7 @@ G.AddData({
     manifest: 0,
     func: function() {
         //Adds a new food item: grass.  Not very tasty or healthy, but better than spoiled food
-        new G.res({
+        new G.Res({
             name: 'grass blades',
             desc: 'simple [grass blades,blades of grass].  Not very nutritious, but better than starving.',
             turnToByContext: {
