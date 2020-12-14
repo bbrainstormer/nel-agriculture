@@ -19,7 +19,7 @@ G.AddData({
                         }
                 }, 
                 partOf: 'food',
-                category: 'food',
+                category: '',
             });
 
         //Gather grass blades from, well, grass
