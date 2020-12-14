@@ -26,7 +26,7 @@ G.AddData({
                     }
                 }, 
                 partOf: '', //People won't do anything to it
-                category: 'food', // but it'll show up in the menu
+                category: 'agriculture', // but it'll show up in the menu
             });
 
         //Gather grass blades from, well, grass
@@ -37,10 +37,10 @@ G.AddData({
         new G.Policy({
 		    name:'eat grass',
 		    desc:'Your people will eat [grass blades].  An awful source of subsistence, but better than [spoiled food].',
-		    cost:{'influence':1}, //If II could I'd make it so that only turning it on uses influence
+		    cost:{'influence':1}, //If I could I'd make it so that only turning it on uses influence I would
 		    req:{'rules of food':true},
 		    effects:[
-			    {type:'make part of',what:['grass blades'],parent:'food'},
+			    {type:'make part of',what:['grass blades'],parent:'food'}, //Still in the same spot in the menu, but can be eaten
 		    ],
 		    effectsOff:[
 			    {type:'make part of',what:['grass blades'],parent:''},
