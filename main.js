@@ -15,7 +15,7 @@ G.AddData({
         //Adds a new food item: grass.  Not very tasty or healthy, but better than spoiled food
         new G.Res({
             name: 'grass blades',
-            desc: 'simple [grass blades,blades of grass].  Not very nutritious, but better than starving.',
+            desc: 'simple [grass blades,blades of grass].',
             turnToByContext: {
                 'eat': {
                     'health': -0.2,
