@@ -26,7 +26,7 @@ G.AddData({
                     }
                 }, 
                 partOf: '', //People won't do anything to it
-                category: 'agriculture', // but it'll show up in the menu
+                category: 'agriculture', // but it'll show up in the menu.  Can be eaten, but not meant to be strictly a food item
             });
 
         //Gather grass blades from, well, grass
