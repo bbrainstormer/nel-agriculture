@@ -12,7 +12,7 @@ G.AddData({
             side:[],
             }
 	
-        //Adds a new food item: grass.  Not very tasty or healthy, but better than spoiled food
+        //Adds a new item: grass.  Not very tasty or healthy, but better than spoiled food
         new G.Res({
             name: 'grass blades',
             desc: 'simple [grass blades,blades of grass].',
@@ -33,7 +33,7 @@ G.AddData({
         G.getDict('grass').res['gather']['grass blades'] = 8;
 
         //Grass blades are an awful food source, but better than nothing
-        //So this way, we can enable/disable it
+        //So this way, we can enable/disable eating it.
         new G.Policy({
 		    name:'eat grass',
 		    desc:'Your people will eat [grass blades].  An awful source of subsistence, but better than [spoiled food].',
